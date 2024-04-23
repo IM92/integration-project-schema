@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   description: OpenAPI Schema for Notifications
-  title: notification-api-schema
+  title: integration-project-api-schema
   version: "0.1"
 servers:
   - url: /
