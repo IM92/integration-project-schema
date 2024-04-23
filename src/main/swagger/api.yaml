@@ -1,0 +1,14 @@
+openapi: 3.0.3
+info:
+  description: OpenAPI Schema for Notifications
+  title: notification-api-schema
+  version: "0.1"
+servers:
+  - url: /
+paths:
+  /v1/notification:
+    $ref: './v1/notification.yaml'
+  /v1/notification/{id}:
+    $ref: './v1/notification--id.yaml'
+  /v1/notification/{id}/callback:
+    $ref: './v1/notification--id--callback.yaml'

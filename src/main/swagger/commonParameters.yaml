@@ -1,0 +1,31 @@
+page:
+  name: page
+  in: query
+  required: true
+  description: |
+    The number of page to be shown. The first page is returned by default.
+  schema:
+    type: integer
+    format: int32
+    default: 0
+size:
+  name: size
+  in: query
+  required: true
+  description: |
+    The size of one page resultset.
+  schema:
+    type: integer
+    format: int32
+    default: 50
+sort:
+  name: sort
+  in: query
+  required: false
+  description: |
+    The sorting of result set.
+  schema:
+    type: string
+    enum:
+      - asc
+      - desc
